@@ -1,0 +1,19 @@
+---
+version: 3
+
+images:
+  base_image:
+    name: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest
+
+dependencies:
+  galaxy: 
+    collections:
+      - { name: community.routeros, version: 2.19.0 }
+      - { name: community.network, version: 5.0.2}
+      - { name: ansible.netcommon, version: 6.1.2 }
+      - { name: ansible.posix, version: 1.5.4 }
+      - { name: ansible.utils, version: 4.1.0 }
+      - { name: cisco.asa, version: 5.0.1 }
+
+options:
+  package_manager_path: /usr/bin/microdnf
