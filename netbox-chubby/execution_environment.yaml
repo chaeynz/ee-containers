@@ -1,0 +1,21 @@
+---
+version: 3
+
+images:
+  base_image:
+    name: registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest
+
+dependencies:
+  galaxy:
+    collections:
+      - { name: netbox.netbox, version: 3.20.0 }
+      - { name: chaeynz.netbox_dns, version: 0.1.0 }
+      - { name: ansible.utils, version: 4.1.0 }
+      - { name: community.general, version: 9.5.1 }
+
+  python:
+    - pynetbox
+    - jmespath
+
+options:
+  package_manager_path: /usr/bin/microdnf
