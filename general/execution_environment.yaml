@@ -6,9 +6,10 @@ images:
     name: registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest
 
 dependencies:
-  galaxy: 
+  galaxy:
     collections:
       - { name: community.general, version: 9.5.0 }
+      - { name: ansible.utils, version: 4.1.0 }
 
 options:
   package_manager_path: /usr/bin/microdnf
