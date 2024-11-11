@@ -6,10 +6,9 @@ images:
     name: registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel8:latest
 
 dependencies:
-  galaxy: 
+  galaxy:
     collections:
           - { name: chaeynz.netbox_dns, version: 0.1.0 }
-
 
 options:
   package_manager_path: /usr/bin/microdnf
